@@ -4,6 +4,9 @@ h1 {
   font-family: $quicksand;
   font-size: $fz36;
   color: $darkBlue;
+  @media(min-width: 1024px) {
+    font-size: $fz48;
+  }
 }
 h2 {
   font-size: $fz30;
