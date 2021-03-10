@@ -629,3 +629,31 @@ h3 {
     padding: 176px 0 28px 0;
   }
 }
+
+.sponsors__row {
+  padding: 10px 0;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sponsors__block {
+  margin: 10px auto 5px;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .sponsors__block {
+    margin: 58px auto;
+  }
+}
+
+.sponsors__block img {
+  width: 60%;
+}
+
+@media (min-width: 1024px) {
+  .sponsors__block img {
+    width: 100%;
+  }
+}
