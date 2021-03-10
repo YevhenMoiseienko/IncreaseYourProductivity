@@ -1,0 +1,18 @@
+@import "variables";
+
+h1 {
+  font-family: $quicksand;
+  font-size: $fz36;
+  color: $darkBlue;
+}
+h2 {
+  font-size: $fz30;
+  color: $darkBlue;
+}
+h3 {
+  font-size: $fz20;
+  color: $darkBlue;
+}
+.flex {
+  display: flex;
+}

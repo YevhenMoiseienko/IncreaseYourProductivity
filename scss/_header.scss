@@ -1,0 +1,99 @@
+@import "variables";
+
+.header {
+  font-family: $quicksand;
+  border-bottom: 1px solid $blueLight;
+
+  &__row {
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    @media(min-width: 768px) {
+      padding: 10px 0;
+    }
+    @media(min-width: 1024px) {
+      padding: 27px 0;
+    }
+  }
+
+  &__left {
+  }
+
+  &__point {
+    margin-right: 10px;
+    @media(min-width: 768px) {
+      margin-right: 20px;
+    }
+    @media(min-width: 1024px) {
+      margin-right: 73px;
+    }
+  }
+
+  &__nav {
+    align-items: center;
+    font-size: $fz12;
+
+    ul {
+
+      li {
+        margin-right: 5px;
+        @media(min-width: 768px) {
+          margin-right: 10px;
+        }
+        @media(min-width: 1024px) {
+          margin-right: 42px;
+        }
+
+        a {
+          color: $gray;
+
+          &:hover {
+            color: $red;
+          }
+
+          &:active {
+            color: $darkBlue;
+          }
+        }
+
+        &:first-child a {
+          color: $blue;
+
+          &:hover {
+            color: $red;
+          }
+
+          &:active {
+            color: $darkBlue;
+          }
+        }
+      }
+    }
+  }
+
+  &__right {
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__social {
+    margin-right: 10px;
+    @media(min-width: 768px) {
+      margin-right: 20px;
+    }
+    @media(min-width: 1024px) {
+      margin-right: 40px;
+    }
+
+    a {
+      display: inline-flex;
+      margin-right: 5px;
+      @media(min-width: 768px) {
+        margin-right: 10px;
+      }
+      @media(min-width: 1024px) {
+        margin-right: 35px;
+      }
+    }
+  }
+}

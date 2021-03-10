@@ -1,0 +1,84 @@
+@import "variables";
+
+.button {
+  font-family: $quicksand;
+  font-size: $fz13;
+  font-weight: 700;
+  background: none;
+  padding: 4px 5px;
+  border-radius: 2px;
+  color: $blueDark;
+  transition: background 0.3s;
+  @media(min-width: 768px) {
+    padding: 7px 10px;
+  }
+  @media(min-width: 1024px) {
+    padding: 13px 15px;
+  }
+  &.button__round {
+    border-radius: 50%;
+    box-shadow: 0 10px 50px rgba(201, 209, 231, 0.6);
+  }
+
+  &.button_white {
+    color: $white;
+  }
+
+  &.button_minGray {
+    color: $minGray;
+  }
+
+  &.button_red {
+    color: $red;
+  }
+
+  &.button_bgLightBlue {
+    background: $lightBlue;
+    &:hover {
+      background: lighten($lightBlue, 10%);
+    }
+    &:active {
+      background: lighten($lightBlue, 20%);
+    }
+  }
+
+  &.button_bgPink {
+    background: $pink;
+    &:hover {
+      background: darken($pink, 10%);
+    }
+    &:active {
+      background: darken($pink, 20%);
+    }
+  }
+
+  &.button_bgWhite {
+    background: $white;
+    &:hover {
+      background: $paleBlue;
+    }
+    &:active {
+      background: darken($paleBlue, 10%);
+    }
+  }
+
+  &.button_bgPaleBlue {
+    background: $paleBlue;
+    &:hover {
+      background: darken($paleBlue, 10%);
+    }
+    &:active {
+      background: darken($paleBlue, 20%);
+    }
+  }
+
+  &.button_bgPaleGray {
+    background: $paleGray;
+    &:hover {
+      background: darken($paleGray, 10%);
+    }
+    &:active {
+      background: darken($paleGray, 20%);
+    }
+  }
+}

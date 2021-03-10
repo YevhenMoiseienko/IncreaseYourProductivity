@@ -1,0 +1,88 @@
+@import "variables";
+
+.footer {
+  font-family: $quicksand;
+  padding: 20px 0;
+  @media(min-width: 768px) {
+    padding: 30px 0;
+  }
+  @media(min-width: 1024px) {
+    padding: 93px 0;
+  }
+  &__row {
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__left {
+  }
+  &__point {
+    margin-right: 10px;
+    @media(min-width: 768px) {
+      margin-right: 20px;
+    }
+    @media(min-width: 1024px) {
+      margin-right: 73px;
+    }
+  }
+  &__nav {
+    align-items: center;
+    font-size: $fz12;
+    ul {
+      li {
+        margin-right: 5px;
+        @media(min-width: 768px) {
+          margin-right: 10px;
+        }
+        @media(min-width: 1024px) {
+          margin-right: 42px;
+        }
+        a {
+          color: $gray;
+          &:hover {
+            color: $red;
+          }
+          &:active {
+            color: $darkBlue;
+          }
+        }
+      }
+    }
+  }
+  &__right {
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__social {
+    margin-right: 10px;
+    @media(min-width: 768px) {
+      margin-right: 20px;
+    }
+    @media(min-width: 1024px) {
+      margin-right: 40px;
+    }
+    a {
+      display: inline-flex;
+      margin-right: 5px;
+      @media(min-width: 768px) {
+        margin-right: 10px;
+      }
+      @media(min-width: 1024px) {
+        margin-right: 35px;
+      }
+    }
+  }
+  &__text p {
+    font-size: $fz10;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: $lightGray;
+    margin: 10px 0 0 40px;
+    @media(min-width: 768px) {
+      margin: 20px 0 0 50px;
+    }
+    @media(min-width: 1024px) {
+      font-size: $fz12;
+      margin: 40px 0 0 100px;
+    }
+  }
+}
