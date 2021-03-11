@@ -4,17 +4,22 @@ h1 {
   font-family: $quicksand;
   font-size: $fz36;
   color: $darkBlue;
-  @media(min-width: 1024px) {
+  @include bg {
     font-size: $fz48;
   }
 }
 h2 {
   font-size: $fz30;
   color: $darkBlue;
+  font-family: $quicksand;
+  @include bg {
+    font-size: $fz36;
+  }
 }
 h3 {
   font-size: $fz20;
   color: $darkBlue;
+  font-family: $quicksand;
 }
 .flex {
   display: flex;

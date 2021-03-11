@@ -8,6 +8,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Quicksand:wght@400;600&family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Quicksand:wght@400;600&family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Quicksand:wght@400;600&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Quicksand:wght@400;600&family=Roboto:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -96,11 +97,19 @@ h1 {
 h2 {
   font-size: 30px;
   color: #3D4F9F;
+  font-family: "Quicksand";
+}
+
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 36px;
+  }
 }
 
 h3 {
   font-size: 20px;
   color: #3D4F9F;
+  font-family: "Quicksand";
 }
 
 .flex {
@@ -118,6 +127,14 @@ h3 {
   transition: background 0.3s;
 }
 
+.button:hover {
+  background: #FFD7D7;
+}
+
+.button:active {
+  background: #ffa4a4;
+}
+
 @media (min-width: 768px) {
   .button {
     padding: 7px 10px;
@@ -133,6 +150,14 @@ h3 {
 .button.button__round {
   border-radius: 50%;
   box-shadow: 0 10px 50px rgba(201, 209, 231, 0.6);
+}
+
+.button.button__shadow {
+  box-shadow: 0 5px 15px rgba(188, 199, 255, 0.75);
+}
+
+.button.button__border-minGray {
+  border: 1px solid #ADB4D2;
 }
 
 .button.button_white {
@@ -226,14 +251,14 @@ h3 {
 @media (min-width: 768px) {
   .container {
     max-width: 1023px;
-    padding: 0 10px;
+    padding: 0 20px;
   }
 }
 
 @media (min-width: 1024px) {
   .container {
     max-width: 1107px;
-    padding: 0 20px;
+    padding: 0 30px;
   }
 }
 
@@ -576,6 +601,7 @@ h3 {
   font-size: 12px;
   line-height: 1.93;
   letter-spacing: 0.03em;
+  color: #697CA6;
 }
 
 @media (min-width: 768px) {
@@ -657,5 +683,139 @@ h3 {
 @media (min-width: 1024px) {
   .sponsors__block img {
     width: 100%;
+  }
+}
+
+.plan {
+  background: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%);
+}
+
+.plan__row {
+  text-align: center;
+  padding: 5px 0;
+}
+
+@media (min-width: 768px) {
+  .plan__row {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .plan__row {
+    padding: 170px 0;
+  }
+}
+
+.plan__material {
+  font-family: "Roboto";
+}
+
+@media (min-width: 768px) {
+  .plan__material {
+    text-align: left;
+  }
+}
+
+.plan__mark {
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #3D4F9F;
+}
+
+.plan__subtitle span {
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .plan__subtitle {
+    margin: 15px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .plan__subtitle {
+    margin: 27px 0;
+  }
+}
+
+.plan__text {
+  font-size: 10px;
+  line-height: 1.93;
+  letter-spacing: 0.03em;
+  color: #8D96BD;
+  padding: 10px 0;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .plan__text {
+    max-width: 400px;
+    margin-bottom: 15px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .plan__text {
+    max-width: 400px;
+    margin-bottom: 47px;
+    font-size: 15px;
+  }
+}
+
+.plan__buttons {
+  font-size: 0;
+  margin-bottom: 10px;
+}
+
+.plan__buttons img {
+  margin-top: 5px;
+}
+
+.plan__buttons a:first-child {
+  border-radius: 2px 0 0 2px;
+}
+
+.plan__buttons a:last-child {
+  padding: 3px 5px;
+  border-radius: 0 2px 2px 0;
+}
+
+@media (min-width: 768px) {
+  .plan__buttons a:last-child {
+    padding: 6px 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .plan__buttons a:last-child {
+    padding: 12px 15px;
+  }
+}
+
+.plan__picture {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .plan__picture {
+    display: inline-block;
+  }
+  .plan__picture img {
+    width: 90%;
+    margin: -30px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1024px) {
+  .plan__picture img {
+    width: 100%;
+    margin: -50px -80px 0 0;
   }
 }

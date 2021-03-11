@@ -4,10 +4,10 @@
   margin: 0 auto;
   @include sm {
       max-width: 1023px;
-      padding: 0 10px;
+      padding: 0 20px;
   }
   @include bg {
       max-width: 1107px;
-      padding: 0 20px;
+      padding: 0 30px;
     }
 }
