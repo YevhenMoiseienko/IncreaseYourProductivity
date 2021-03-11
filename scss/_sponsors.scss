@@ -1,3 +1,4 @@
+@import "variables";
 .sponsors {
   &__row {
     padding: 10px 0;
@@ -8,12 +9,12 @@
   &__block{
     margin: 10px auto 5px;
     text-align: center;
-    @media(min-width: 1024px) {
+    @include bg {
       margin: 58px auto;
     }
     img {
       width: 60%;
-      @media(min-width: 1024px) {
+      @include bg {
         width: 100%;
       }
     }

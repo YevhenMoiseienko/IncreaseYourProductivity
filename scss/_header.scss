@@ -9,11 +9,11 @@
     align-items: center;
     padding: 5px 0;
     flex-direction: column;
-    @media(min-width: 768px) {
+    @include sm {
       padding: 10px 0;
       flex-direction: row;
     }
-    @media(min-width: 1024px) {
+    @include bg {
       padding: 27px 0;
     }
   }
@@ -21,17 +21,17 @@
   &__left {
     flex-direction: column;
     align-items: center;
-    @media(min-width: 768px) {
+    @include sm {
       flex-direction: row;
     }
   }
 
   &__point {
     margin: 5px 0;
-    @media(min-width: 768px) {
+    @include sm {
       margin-right: 20px;
     }
-    @media(min-width: 1024px) {
+    @include bg {
       margin-right: 73px;
     }
   }
@@ -44,10 +44,10 @@
 
       li {
         margin-right: 5px;
-        @media(min-width: 768px) {
+        @include sm {
           margin-right: 10px;
         }
-        @media(min-width: 1024px) {
+        @include bg {
           margin-right: 42px;
         }
 
@@ -82,27 +82,27 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 5px;
-    @media(min-width: 768px) {
+    @include sm {
       flex-direction: row;
     }
   }
 
   &__social {
     margin: 5px 0;
-    @media(min-width: 768px) {
+    @include sm {
       margin-right: 20px;
     }
-    @media(min-width: 1024px) {
+    @include bg {
       margin-right: 40px;
     }
 
     a {
       display: inline-flex;
       margin-right: 5px;
-      @media(min-width: 768px) {
+      @include sm {
         margin-right: 10px;
       }
-      @media(min-width: 1024px) {
+      @include bg {
         margin-right: 35px;
       }
     }

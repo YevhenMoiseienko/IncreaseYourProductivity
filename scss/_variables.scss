@@ -32,3 +32,17 @@ $fz10: 10px;
 $roboto: "Roboto";
 $openSans: "Open Sans";
 $quicksand: "Quicksand";
+
+$screen-sm-min: 768px;
+$screen-bg-min: 1024px;
+
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+@mixin bg {
+  @media (min-width: #{$screen-bg-min}) {
+    @content;
+  }
+}

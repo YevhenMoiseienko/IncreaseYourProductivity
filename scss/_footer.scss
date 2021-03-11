@@ -3,33 +3,33 @@
 .footer {
   font-family: $quicksand;
   padding: 20px 0;
-  @media(min-width: 768px) {
+  @include sm {
     padding: 30px 0;
   }
-  @media(min-width: 1024px) {
+  @include bg {
     padding: 93px 0;
   }
   &__row {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    @media(min-width: 768px) {
+    @include sm {
       flex-direction: row;
     }
   }
   &__left {
     flex-direction: column;
     align-items: center;
-    @media(min-width: 768px) {
+    @include sm {
       flex-direction: row;
     }
   }
   &__point {
     margin: 5px 0;
-    @media(min-width: 768px) {
+    @include sm {
       margin-right: 20px;
     }
-    @media(min-width: 1024px) {
+    @include bg {
       margin-right: 73px;
     }
   }
@@ -39,10 +39,10 @@
     ul {
       li {
         margin-right: 5px;
-        @media(min-width: 768px) {
+        @include sm {
           margin-right: 10px;
         }
-        @media(min-width: 1024px) {
+        @include bg {
           margin-right: 42px;
         }
         a {
@@ -61,25 +61,25 @@
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
-    @media(min-width: 768px) {
+    @include sm {
       flex-direction: row;
     }
   }
   &__social {
     margin: 5px 0;
-    @media(min-width: 768px) {
+    @include sm {
       margin-right: 20px;
     }
-    @media(min-width: 1024px) {
+    @include bg {
       margin-right: 40px;
     }
     a {
       display: inline-flex;
       margin-right: 5px;
-      @media(min-width: 768px) {
+      @include sm {
         margin-right: 10px;
       }
-      @media(min-width: 1024px) {
+      @include bg {
         margin-right: 35px;
       }
     }
@@ -90,10 +90,10 @@
     text-transform: capitalize;
     color: $lightGray;
     margin: 10px 0 0 40px;
-    @media(min-width: 768px) {
+    @include sm {
       margin: 20px 0 0 50px;
     }
-    @media(min-width: 1024px) {
+    @include bg {
       font-size: $fz12;
       margin: 40px 0 0 100px;
     }

@@ -1,4 +1,5 @@
 @import "variables";
+
 .top {
   background: url(../img/top/clouds.jpg) 0 0/ 100% 100% no-repeat;
   &__mark{
@@ -9,10 +10,10 @@
     text-transform: uppercase;
     color: $darkBlue;
     text-align: center;
-    @media(min-width: 768px) {
+    @include sm {
       padding: 40px 0 8px 0;
     }
-    @media(min-width: 1024px) {
+    @include bg{
       padding: 92px 0 16px 0;
     }
   }
@@ -30,11 +31,11 @@
     font-size: $fz12;
     line-height: 1.93;
     letter-spacing: 0.03em;
-    @media(min-width: 768px) {
+    @include sm {
       max-width: 360px;
       margin: 14px auto 10px;
     }
-    @media(min-width: 1024px) {
+    @include bg {
       font-size: $fz15;
       max-width: 502px;
       margin: 28px auto 20px;
@@ -51,7 +52,7 @@
     img {
       margin-left: 2px;
       width: 80%;
-      @media(min-width: 1024px) {
+      @include bg {
         width: 100%;
       }
     }
@@ -59,10 +60,10 @@
   &__points{
     text-align: center;
     margin-top: 5px;
-    @media(min-width: 768px) {
+    @include sm {
       padding: 76px 0 14px 0;
     }
-    @media(min-width: 1024px) {
+    @include bg {
       padding: 176px 0 28px 0;
     }
   }

@@ -9,10 +9,10 @@
   border-radius: 2px;
   color: $blueDark;
   transition: background 0.3s;
-  @media(min-width: 768px) {
+  @include sm {
     padding: 7px 10px;
   }
-  @media(min-width: 1024px) {
+  @include bg {
     padding: 13px 15px;
   }
   &.button__round {
