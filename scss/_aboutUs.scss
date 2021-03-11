@@ -1,9 +1,17 @@
 @import "variables";
+$offersColumn: 2;
+$offersColumnSm: 4;
 .about-us {
   font-family: $openSans;
   &__main {
     padding: 5px 0;
     text-align: center;
+    @include sm {
+      padding: 70px 0;
+    }
+    @include bg {
+      padding: 171px 0;
+    }
   }
   &__mark {
     font-family: $roboto;
@@ -15,14 +23,25 @@
   }
   &__subtitle{
     margin: 5px 0 10px;
+    @include sm {
+      margin: 15px 0 40px;
+      font-size: $fz24;
+      font-weight: 500;
+    }
+    @include bg {
+      margin: 20px 0 92px;
+    }
   }
   &__block {
     flex-wrap: wrap;
     justify-content: space-around;
   }
   &__box {
-    width: calc(100%/2);
+    width: calc(100% / #{$offersColumn});
     padding: 5px;
+    @include sm {
+      width: calc(100% / #{$offersColumnSm});
+    }
     &__picture {}
     &__title {
       font-weight: 700;
@@ -42,10 +61,17 @@
   }
   &__buttons {
     margin-top: 10px;
+    @include sm {
+      margin-top: 40px;
+    }
+    @include bg {
+      margin-top: 92px;
+    }
     span {
       font-size: $fz11;
       line-height: 1.72;
       color: $lightGray;
+      margin: 0 15px 0;
     }
   }
 }

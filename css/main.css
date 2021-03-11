@@ -113,6 +113,13 @@ h3 {
   font-family: "Quicksand";
 }
 
+@media (min-width: 768px) {
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
 .flex {
   display: flex;
 }
@@ -834,6 +841,18 @@ h3 {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .about-us__main {
+    padding: 70px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-us__main {
+    padding: 171px 0;
+  }
+}
+
 .about-us__mark {
   font-family: "Roboto";
   font-size: 10px;
@@ -847,14 +866,34 @@ h3 {
   margin: 5px 0 10px;
 }
 
+@media (min-width: 768px) {
+  .about-us__subtitle {
+    margin: 15px 0 40px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-us__subtitle {
+    margin: 20px 0 92px;
+  }
+}
+
 .about-us__block {
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
 .about-us__box {
-  width: calc(100%/2);
+  width: calc(100% / 2);
   padding: 5px;
+}
+
+@media (min-width: 768px) {
+  .about-us__box {
+    width: calc(100% / 4);
+  }
 }
 
 .about-us__box__title {
@@ -878,8 +917,21 @@ h3 {
   margin-top: 10px;
 }
 
+@media (min-width: 768px) {
+  .about-us__buttons {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-us__buttons {
+    margin-top: 92px;
+  }
+}
+
 .about-us__buttons span {
   font-size: 11px;
   line-height: 1.72;
   color: #8D96BD;
+  margin: 0 15px 0;
 }

@@ -20,6 +20,10 @@ h3 {
   font-size: $fz20;
   color: $darkBlue;
   font-family: $quicksand;
+  @include sm {
+    font-size: $fz24;
+    font-weight: 700;
+  }
 }
 .flex {
   display: flex;
