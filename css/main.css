@@ -9,6 +9,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Quicksand:wght@400;600&family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Quicksand:wght@400;600&family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Quicksand:wght@400;600&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Quicksand:wght@400;600&family=Roboto:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -162,6 +163,10 @@ h3 {
 
 .button.button_white {
   color: #ffffff;
+}
+
+.button.button_blueDark {
+  color: #3A79FF;
 }
 
 .button.button_minGray {
@@ -818,4 +823,63 @@ h3 {
     width: 100%;
     margin: -50px -80px 0 0;
   }
+}
+
+.about-us {
+  font-family: "Open Sans";
+}
+
+.about-us__main {
+  padding: 5px 0;
+  text-align: center;
+}
+
+.about-us__mark {
+  font-family: "Roboto";
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #3D4F9F;
+}
+
+.about-us__subtitle {
+  margin: 5px 0 10px;
+}
+
+.about-us__block {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.about-us__box {
+  width: calc(100%/2);
+  padding: 5px;
+}
+
+.about-us__box__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 25px;
+  color: #4074F8;
+}
+
+.about-us__box__text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.72;
+  color: #8D96BD;
+  max-width: 200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.about-us__buttons {
+  margin-top: 10px;
+}
+
+.about-us__buttons span {
+  font-size: 11px;
+  line-height: 1.72;
+  color: #8D96BD;
 }

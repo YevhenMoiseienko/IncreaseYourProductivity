@@ -1,0 +1,51 @@
+@import "variables";
+.about-us {
+  font-family: $openSans;
+  &__main {
+    padding: 5px 0;
+    text-align: center;
+  }
+  &__mark {
+    font-family: $roboto;
+    font-size: $fz10;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $darkBlue;
+  }
+  &__subtitle{
+    margin: 5px 0 10px;
+  }
+  &__block {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  &__box {
+    width: calc(100%/2);
+    padding: 5px;
+    &__picture {}
+    &__title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 25px;
+      color: $blueMid;
+    }
+    &__text {
+      font-weight: 600;
+      font-size: $fz11;
+      line-height: 1.72;
+      color: $lightGray;
+      max-width: 200px;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+  &__buttons {
+    margin-top: 10px;
+    span {
+      font-size: $fz11;
+      line-height: 1.72;
+      color: $lightGray;
+    }
+  }
+}
