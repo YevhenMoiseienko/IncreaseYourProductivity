@@ -1,0 +1,64 @@
+@import "variables";
+
+.statistic {
+  font-family: $quicksand;
+  justify-content: center;
+  &__left {
+    background: $blueGradient;
+    flex-basis: 50%;
+  }
+
+  &__right {
+    background: $lightGradient;
+    flex-basis: 50%;
+  }
+
+  &__lBox {
+    text-align: end;
+    padding: 10px;
+    h1 {
+      color: $white;
+    }
+    p {
+      color: $white;
+    }
+    @include sm {
+      padding: 45px;
+    }
+    @include bg {
+      padding: 90px;
+    }
+  }
+
+  &__rBox {
+    padding: 10px;
+    h1 {
+      color: $statisticBlue;
+    }
+    p {
+      color: $statisticBlue;
+    }
+    @include sm {
+      padding: 45px;
+    }
+    @include bg {
+      padding: 90px;
+    }
+  }
+
+  &__picture {
+  }
+
+  &__number {
+    @include sm {
+      margin: 15px 0;
+    }
+    @include bg {
+      margin: 25px 0;
+    }
+  }
+
+  &__text {
+  }
+
+}

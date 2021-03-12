@@ -1,0 +1,135 @@
+@import "variables";
+.resources {
+  background: $palePool;
+  &__block {
+    text-align: center;
+    font-family: $roboto;
+    padding: 10px 0;
+    @include sm {
+      padding: 20px 0;
+    }
+    @include bg {
+      padding: 100px 0;
+    }
+  }
+  &__mark {
+    font-size: $fz10;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $darkBlue;
+  }
+  &__title {
+    padding: 5px;
+    @include bg {
+      margin: 20px 0;
+    }
+  }
+  &__box {
+    justify-content: center;
+    align-items: center;
+  }
+  &__img {
+    padding: 5px;
+    img {
+      width: 70%;
+    }
+  }
+  &__column {
+    background: #FFFFFF;
+    border: 1px solid $border;
+    box-shadow: 0 15px 50px $shadow;
+    max-width: 240px;
+    @include sm {
+      min-width: 600px;
+    }
+    @include bg {
+      min-width: 850px;
+      display: flex;
+      padding: 20px;
+    }
+  }
+  &__pictures {
+    display: flex;
+    img {
+      width: 70%;
+    }
+    @include sm {
+      height: 300px;
+      position: relative;
+    }
+  }
+  &__info {
+    @include bg {
+      margin-left: 20px;
+    }
+  }
+  &__video {
+    background: url(../img/resources/main.jpg) 0 0 no-repeat;
+    background-size: cover;
+    width: 230px;
+    margin: 0 auto;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      display: block;
+    }
+    @include sm {
+      width: 300px;
+      height: 300px;
+      margin: 0 5px 0 0;
+    }
+  }
+  &__picture1 {
+    background: url(../img/resources/laptop.jpg) 0 0 no-repeat;
+    background-size: cover;
+    width: 140px;
+    height: 140px;
+
+  }
+  &__picture2 {
+    background: url(../img/resources/man.jpg) 0 0 no-repeat;
+    background-size: cover;
+    width: 140px;
+    height: 140px;
+    @include sm {
+      position: absolute;
+      right: 1%;
+      bottom: 1%;
+    }
+    @include bg {
+      right: 0;
+      bottom: 0;
+    }
+
+  }
+  &__subtitle {
+    @include sm {
+      padding: 10px 0;
+    }
+  }
+  &__text {
+    font-size: $fz10;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+    color: $lightGray;
+    padding: 10px;
+    @include bg {
+      margin: 20px 0 40px;
+    }
+  }
+  &__buttons {
+    margin: 10px 0;
+    @include sm {
+      margin: 20px 0;
+    }
+  }
+}
+.none {
+  display: none;
+  @include sm {
+    display: block;
+  }
+}
