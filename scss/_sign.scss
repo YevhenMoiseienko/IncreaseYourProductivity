@@ -1,0 +1,66 @@
+@import "variables";
+.sign {
+  text-align: center;
+  padding: 20px 0;
+  @include sm {
+    padding: 60px 0;
+  }
+  @include bg {
+    padding: 115px 0;
+  }
+  &__column {
+    @include bg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__info {
+    @include bg {
+      text-align: left;
+      max-width: 330px;
+      margin-right: 80px;
+    }
+  }
+  &__name {
+    font-family: $quicksand;
+    font-weight: 700;
+    font-size: $fz18;
+    color: $darkBlue;
+  }
+  &__text {
+    font-family: $roboto;
+    font-size: $fz14;
+    line-height: 1.93;
+    letter-spacing: 0.03em;
+    color: $lightGray;
+    padding: 20px 0;
+  }
+  &__form {
+    justify-content: center;
+    align-items: center;
+  }
+  &__field {
+    input {
+      font-family: $quicksand;
+      font-size: $fz13;
+      background: #EFEFF7;
+      border-radius: 5px;
+      padding: 4px;
+      margin-right: 5px;
+      @include sm {
+        padding: 7px;
+        margin-right: 5px;
+      }
+      @include bg {
+        padding: 14px;
+        margin-right: 14px;
+      }
+    }
+  }
+  &__button {
+    button {
+      border-radius: 5px;
+    }
+  }
+}

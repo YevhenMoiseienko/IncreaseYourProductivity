@@ -13,6 +13,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Quicksand:wght@400;600&family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Quicksand:wght@400;600&family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Quicksand:wght@400;600&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Quicksand:wght@400;600&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Quicksand:wght@400;600&family=Roboto:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -422,6 +424,7 @@ h3 {
 .footer {
   font-family: "Quicksand";
   padding: 20px 0;
+  border-top: 1px solid #D2E1FF;
 }
 
 @media (min-width: 768px) {
@@ -1311,4 +1314,168 @@ h3 {
 .quotes__photo {
   margin-top: -30px;
   text-align: center;
+}
+
+.started {
+  background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+  font-family: "Roboto";
+  text-align: center;
+  color: #ffffff;
+  padding: 15px 0;
+}
+
+@media (min-width: 768px) {
+  .started {
+    padding: 40px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .started {
+    padding: 90px 0;
+  }
+}
+
+.started__mark {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1024px) {
+  .started__mark {
+    padding-bottom: 20px;
+  }
+}
+
+.started__title h1 {
+  color: #ffffff;
+}
+
+.started__title span {
+  font-weight: 700;
+}
+
+.started__text {
+  max-width: 325px;
+  margin: 15px auto;
+}
+
+@media (min-width: 768px) {
+  .started__text {
+    max-width: 415px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .started__text {
+    max-width: 715px;
+    margin: 30px auto 40px;
+  }
+}
+
+.started__buttons {
+  font-size: 0;
+}
+
+.started__buttons a:first-child {
+  border-radius: 2px 0 0 2px;
+}
+
+.started__buttons a:last-child {
+  padding: 3px 5px;
+  border-radius: 0 2px 2px 0;
+}
+
+@media (min-width: 768px) {
+  .started__buttons a:last-child {
+    padding: 6px 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .started__buttons a:last-child {
+    padding: 12px 15px;
+  }
+}
+
+.sign {
+  text-align: center;
+  padding: 20px 0;
+}
+
+@media (min-width: 768px) {
+  .sign {
+    padding: 60px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sign {
+    padding: 115px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sign__column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sign__info {
+    text-align: left;
+    max-width: 330px;
+    margin-right: 80px;
+  }
+}
+
+.sign__name {
+  font-family: "Quicksand";
+  font-weight: 700;
+  font-size: 18px;
+  color: #3D4F9F;
+}
+
+.sign__text {
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 1.93;
+  letter-spacing: 0.03em;
+  color: #8D96BD;
+  padding: 20px 0;
+}
+
+.sign__form {
+  justify-content: center;
+  align-items: center;
+}
+
+.sign__field input {
+  font-family: "Quicksand";
+  font-size: 13px;
+  background: #EFEFF7;
+  border-radius: 5px;
+  padding: 4px;
+  margin-right: 5px;
+}
+
+@media (min-width: 768px) {
+  .sign__field input {
+    padding: 7px;
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sign__field input {
+    padding: 14px;
+    margin-right: 14px;
+  }
+}
+
+.sign__button button {
+  border-radius: 5px;
 }

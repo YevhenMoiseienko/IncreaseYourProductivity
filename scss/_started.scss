@@ -1,0 +1,57 @@
+@import "variables";
+.started {
+  background: $blueGradient;
+  font-family: $roboto;
+  text-align: center;
+  color: $white;
+  padding: 15px 0;
+  @include sm {
+    padding: 40px 0;
+  }
+  @include bg {
+    padding: 90px 0;
+  }
+  &__mark {
+    font-size: $fz10;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    @include bg {
+      padding-bottom: 20px;
+    }
+  }
+  &__title {
+    h1 {
+      color: $white;
+    }
+    span {
+      font-weight: 700;
+    }
+  }
+  &__text {
+    max-width: 325px;
+    margin: 15px auto;
+    @include sm {
+      max-width: 415px;
+    }
+    @include bg {
+      max-width: 715px;
+      margin: 30px auto 40px;
+    }
+  }
+  &__buttons {
+    font-size: 0;
+    a:first-child {
+      border-radius: 2px 0 0 2px;
+    }
+    a:last-child {
+      padding: 3px 5px;
+      border-radius: 0 2px 2px 0;
+      @include sm {
+        padding: 6px 10px;
+      }
+      @include bg {
+        padding: 12px 15px;
+      }
+    }
+  }
+}

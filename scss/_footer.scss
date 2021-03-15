@@ -3,6 +3,7 @@
 .footer {
   font-family: $quicksand;
   padding: 20px 0;
+  border-top: 1px solid $paleBlue;
   @include sm {
     padding: 30px 0;
   }
