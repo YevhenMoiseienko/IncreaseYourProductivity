@@ -15,6 +15,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Quicksand:wght@400;600&family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Quicksand:wght@400;600&family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Quicksand:wght@400;600&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Quicksand:wght@400;600&family=Roboto:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -1456,7 +1457,7 @@ h3 {
 .sign__field input {
   font-family: "Quicksand";
   font-size: 13px;
-  background: #EFEFF7;
+  background: #D8E3FE;
   border-radius: 5px;
   padding: 4px;
   margin-right: 5px;
