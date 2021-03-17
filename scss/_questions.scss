@@ -1,13 +1,111 @@
 @import "variables";
 .questions {
+  padding: 10px 0;
+  text-align: center;
+  font-family: $quicksand;
+  @include sm {
+    padding: 30px 0;
+  }
+  @include bg {
+    padding: 100px 0;
+  }
   &__column {}
   &__top {}
-  &__mark {}
+  &__mark {
+    font-family: $roboto;
+    font-size: $fz10;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $darkBlue;
+    padding-bottom: 10px;
+    @include sm {
+      padding-bottom: 20px;
+    }
+  }
   &__title {}
   &__items {}
-  &__box {}
-  &__question {}
-  &__answer {}
-  &__text {}
-  &__button {}
+  &__box {
+    border-bottom: 1px solid $blueLight;
+    max-width: 380px;
+    margin: 0 auto;
+    @include sm {
+      max-width: 580px;
+    }
+  }
+  &__question {
+    p {
+      padding-left: 25px;
+    }
+    font-weight: 700;
+    font-size: $fz15;
+    letter-spacing: 0.03em;
+    color: $lightGray;
+    padding: 10px 0 5px;
+    position: relative;
+    cursor: pointer;
+    &:before,
+    &:after {
+      content: '';
+      width: 10px;
+      height: 2px;
+      border-radius: 30px;
+      background-color: $lightGray;
+      position: absolute;
+      top: 50%;
+      transition: all 0.3s;
+    }
+    &:before {
+      transform: rotate(40deg);
+      left: 0;
+    }
+    &:after {
+      transform: rotate(-40deg);
+      left: 6px;
+    }
+    &.active:before,
+    &.active:after {
+      background-color: $darkBlue;
+    }
+    &.active:before {
+      transform: rotate(-40deg);
+    }
+    &.active:after {
+      transform: rotate(40deg);
+    }
+    &.active {
+      color: $darkBlue;
+    }
+    @include sm {
+      padding: 20px 0 10px;
+    }
+  }
+  &__answer {
+    display: none;
+    @include bg {
+      justify-content: space-around;
+      align-content: center;
+      align-items: flex-end;
+      padding-bottom: 20px;
+    }
+  }
+  &__text {
+    font-size: $fz12;
+    letter-spacing: 0.03em;
+    color: $lightGray;
+    padding: 5px;
+    @include sm {
+      padding: 10px;
+      font-size: $fz15;
+    }
+    @include bg {
+      max-width: 300px;
+      text-align: left;
+    }
+  }
+  &__button {
+    margin-bottom: 10px;
+    @include sm {
+      margin-bottom: 20px;
+    }
+  }
 }

@@ -1,3 +1,9 @@
-console.log('123');
-console.log('13');
+$(document).ready(function(){
+   initSlider();
+})
 
+function initSlider() {
+    $('.resources__slider').slick({
+        dots:true
+    })
+}

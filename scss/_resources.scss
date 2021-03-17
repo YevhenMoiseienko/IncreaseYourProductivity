@@ -24,9 +24,53 @@
       margin: 20px 0;
     }
   }
+  &__slider {
+    position: relative;
+    & .slick-arrow {
+      position: absolute;
+      top: 40%;
+      z-index: 10;
+      font-size: 0;
+      height: 60px;
+      width: 30px;
+      &.slick-prev {
+        left: 0;
+        background: url(../img/resources/left.svg) 0 0/100% no-repeat;
+      }
+      &.slick-next {
+        right: 0;
+        background: url(../img/resources/right.svg) 0 0/100% no-repeat;
+      }
+    }
+    & .slick-dots {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & li {
+        margin: 20px 10px 0;
+        @include sm {
+          margin: 50px 10px 0;
+        }
+        @include bg {
+          margin: 100px 10px 0;
+        }
+        &.slick-active {
+          & button {
+           background: $blueDark;
+         }
+        }
+      }
+      & button {
+        font-size: 0;
+        width: 10px;
+        height: 10px;
+        color: $gray;
+        border-radius: 50%;
+      }
+    }
+  }
   &__box {
-    justify-content: center;
-    align-items: center;
+
   }
   &__img {
     padding: 5px;
@@ -39,6 +83,7 @@
     border: 1px solid $border;
     box-shadow: 0 15px 50px $shadow;
     max-width: 240px;
+    margin: 0 auto;
     @include sm {
       min-width: 600px;
     }
@@ -131,4 +176,7 @@
   @include sm {
     display: block;
   }
+}
+#text {
+  color: red;
 }
