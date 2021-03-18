@@ -1,9 +1,18 @@
-$(document).ready(function(){
-   initSlider();
+$(document).ready(function () {
+    initSlider();
 })
 
 function initSlider() {
     $('.resources__slider').slick({
-        dots:true
+        dots: true
+    });
+    $('.top__sliders').slick({
+        dots: true,
+        arrows: false,
+    });
+    $('.quotes__slider').slick({
+        dots: true,
+        arrows: false,
     })
+
 }

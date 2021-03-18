@@ -4,6 +4,7 @@
   background: $quotesBg;
   border-top: 1px solid $blueLight;
   border-bottom: 1px solid $blueLight;
+  min-width: 0;
   &__column {
     padding: 20px 0;
     @include sm {
@@ -20,6 +21,7 @@
     text-align: center;
     @include bg {
       text-align: left;
+      min-width: 325px;
     }
   }
   &__mark {
@@ -47,6 +49,45 @@
     padding-bottom: 20px;
     @include bg {
      max-width: 320px;
+    }
+  }
+  &__slider {
+    min-width: 0;
+    & .slick-arrow {
+      font-size: 0;
+    }
+    & .slick-dots {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & li {
+        margin: 20px 10px 0;
+        @include sm {
+          margin: 30px 10px 0;
+        }
+        @include bg {
+          margin: 50px 10px 0;
+        }
+        &.slick-active {
+          & button {
+            background: $blueDark;
+          }
+        }
+      }
+      & button {
+        font-size: 0;
+        width: 5px;
+        height: 5px;
+        color: $gray;
+        border-radius: 50%;
+      }
+    }
+  }
+  &__info {
+    opacity: 0.4;
+    &.slick-current {
+      margin-left: 30px;
+      opacity: 1;
     }
   }
   &__box {

@@ -60,18 +60,37 @@ $offersColumnSm: 4;
     }
   }
   &__buttons {
-    margin-top: 10px;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 300px;
+    margin: 10px auto 0;
+    position: relative;
     @include sm {
-      margin-top: 40px;
+      margin: 40px auto 0;
     }
     @include bg {
-      margin-top: 92px;
+      margin: 92px auto 0;
     }
     span {
       font-size: $fz11;
       line-height: 1.72;
       color: $lightGray;
       margin: 0 15px 0;
+      &:before,
+      &:after {
+        content: '';
+        width: 10px;
+        height: 1px;
+        background: $lightGray;
+        position: absolute;
+        top: 50%;
+      }
+      &:before {
+        left: 41%;
+      }
+      &:after {
+        right: 41%;
+      }
     }
   }
 }

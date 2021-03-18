@@ -82,6 +82,7 @@
   &__answer {
     display: none;
     @include bg {
+      //display: flex;
       justify-content: space-around;
       align-content: center;
       align-items: flex-end;

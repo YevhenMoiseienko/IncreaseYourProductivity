@@ -2,6 +2,34 @@
 
 .top {
   background: url(../img/top/clouds.jpg) 0 0/ 100% 100% no-repeat;
+  &__sliders {
+    & .slick-dots {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & li {
+        margin: 40px 10px 10px;
+        @include sm {
+          margin: 80px 10px 20px;
+        }
+        @include bg {
+          margin: 150px 10px 50px;
+        }
+        &.slick-active {
+          & button {
+            background: $blueDark;
+          }
+        }
+      }
+      & button {
+        font-size: 0;
+        width: 10px;
+        height: 10px;
+        color: $gray;
+        border-radius: 50%;
+      }
+    }
+  }
   &__mark{
     font-family: $roboto;
     font-size: $fz10;
@@ -55,16 +83,6 @@
       @include bg {
         width: 100%;
       }
-    }
-  }
-  &__points{
-    text-align: center;
-    margin-top: 5px;
-    @include sm {
-      padding: 76px 0 14px 0;
-    }
-    @include bg {
-      padding: 176px 0 28px 0;
     }
   }
 }
