@@ -83,13 +83,7 @@
       }
     }
   }
-  &__info {
-    opacity: 0.4;
-    &.slick-current {
-      margin-left: 30px;
-      opacity: 1;
-    }
-  }
+
   &__box {
     background: $white;
     border: 1px solid #D8E3FE;

@@ -46,9 +46,6 @@
     }
   }
 
-  &__picture {
-  }
-
   &__number {
     @include sm {
       margin: 15px 0;
@@ -57,8 +54,4 @@
       margin: 25px 0;
     }
   }
-
-  &__text {
-  }
-
 }

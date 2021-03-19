@@ -42,7 +42,6 @@ $offersColumnSm: 4;
     @include sm {
       width: calc(100% / #{$offersColumnSm});
     }
-    &__picture {}
     &__title {
       font-weight: 700;
       font-size: 14px;

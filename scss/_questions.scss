@@ -22,8 +22,6 @@
       padding-bottom: 20px;
     }
   }
-  &__title {}
-  &__items {}
   &__box {
     border-bottom: 1px solid $blueLight;
     max-width: 380px;
@@ -79,14 +77,24 @@
       padding: 20px 0 10px;
     }
   }
+  &__button {
+    @include bg {
+      //position: absolute;
+    }
+  }
   &__answer {
     display: none;
+    &.active {
+      display: block;
+    }
     @include bg {
-      //display: flex;
       justify-content: space-around;
       align-content: center;
       align-items: flex-end;
       padding-bottom: 20px;
+      &.active {
+        display: flex;
+      }
     }
   }
   &__text {
