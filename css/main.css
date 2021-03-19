@@ -1566,18 +1566,12 @@ h3 {
   display: none;
 }
 
-.questions__answer.active {
-  display: block;
-}
-
 @media (min-width: 1024px) {
-  .questions__answer {
+  .questions__block {
     justify-content: space-around;
     align-content: center;
     align-items: flex-end;
     padding-bottom: 20px;
-  }
-  .questions__answer.active {
     display: flex;
   }
 }

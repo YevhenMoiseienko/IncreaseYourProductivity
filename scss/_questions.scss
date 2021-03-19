@@ -84,17 +84,14 @@
   }
   &__answer {
     display: none;
-    &.active {
-      display: block;
     }
+  &__block{
     @include bg {
       justify-content: space-around;
       align-content: center;
       align-items: flex-end;
       padding-bottom: 20px;
-      &.active {
-        display: flex;
-      }
+      display: flex;
     }
   }
   &__text {
