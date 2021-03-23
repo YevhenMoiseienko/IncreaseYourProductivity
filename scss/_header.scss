@@ -111,13 +111,30 @@
     padding: 50px 0 0 20px;
     transition: all 0.3s;
     z-index: -1;
-    //align-items: center;
-    //font-size: $fz12;
+    text-align: center;
+    @include sm {
+      background: #ffffff;
+      display: flex;
+      z-index: 2;
+      top: 0;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      padding: 0;
+      overflow: visible;
+    }
+    @include bg {
+      height: 90px;
+    }
+
     &.active {
       top: 0;
     }
 
-    ul {
+    &>ul {
+      @include sm {
+        display: flex;
+      }
 
       li {
         margin-right: 5px;
@@ -143,11 +160,6 @@
         &:first-child p {
           color: $blue;
 
-          @include sm {
-            //padding: 20px 0 10px;
-          }
-
-
           &:hover {
             color: $red;
           }
@@ -166,10 +178,13 @@
 
   &__name {
     cursor: pointer;
-
     p {
       font-size: $fz30;
       padding: 30px 0 0 20px;
+      @include sm {
+        font-size: $fz12;
+        padding:  0 0 0 20px;
+      }
     }
 
     &:before,
@@ -182,6 +197,9 @@
       position: absolute;
       top: 42px;
       transition: all 0.3s;
+      @include sm {
+        top: 7px;
+      }
     }
 
     &:before {
@@ -218,6 +236,10 @@
     z-index: 10;
     padding: 1px 10px;
     font-size: $fz24;
+    @include sm {
+      font-size: $fz12;
+      position: absolute;
+    }
     ul {
       li {
         margin: 10px;
@@ -228,9 +250,9 @@
   &__right {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 5px;
     @include sm {
       flex-direction: row;
+      margin-bottom: 5px;
     }
   }
 
@@ -238,21 +260,24 @@
     display: flex;
     justify-content: space-around;
     margin: 5px 0;
+    @include sm {
+      margin: 0;
+    }
     img {
       width: 50px;
+      @include sm {
+        width: 10px;
+      }
     }
     @include sm {
-      margin-right: 20px;
-    }
-    @include bg {
-      margin-right: 40px;
+      margin-left: 80px;
     }
 
     a {
       display: inline-flex;
       margin-right: 5px;
       @include sm {
-        margin-right: 10px;
+        margin-right: 20px;
       }
       @include bg {
         margin-right: 35px;
