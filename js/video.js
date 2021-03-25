@@ -1,5 +1,11 @@
-$('.card-deck a').fancybox({
-    caption : function( instance, item ) {
-        return $(this).parent().find('.card-text').html();
-    }
+$(document).ready(function() {
+    startVideo();
 });
+
+function startVideo () {
+    $('.card-deck a').fancybox({
+        caption : function( instance, item ) {
+            return $(this).parent().find('.card-text').html();
+        }
+    });
+}
