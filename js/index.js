@@ -8,7 +8,7 @@ $(document).ready(function () {
     initSlider();
     dropDown();
     // headerDropDown();
-    burger();
+    // burger();
     startVideo();
 })
 

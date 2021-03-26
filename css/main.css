@@ -350,6 +350,23 @@ h3 {
   border-radius: 50%;
 }
 
+.header__drop {
+  order: -1;
+}
+
+.header__drop:hover .header__nav {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .header__drop {
+    order: 0;
+  }
+  .header__drop:hover .header__nav {
+    display: flex;
+  }
+}
+
 .header__burger {
   margin-right: 35px;
   position: relative;
@@ -406,15 +423,27 @@ h3 {
 }
 
 .header__nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
+  position: absolute;
+  display: none;
+  background: #EFF4FF;
 }
 
-.header__links ul {
-  display: flex;
-  align-items: center;
+@media (min-width: 768px) {
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    position: relative;
+    background: inherit;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__links ul {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header__column {
@@ -469,7 +498,7 @@ h3 {
 }
 
 .header__name p {
-  font-size: 30px;
+  font-size: 20px;
   padding: 30px 0 0 20px;
 }
 
@@ -486,9 +515,15 @@ h3 {
 
 .header__elements {
   display: none;
-  position: absolute;
-  background: #EFF4FF;
-  z-index: 5;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .header__elements {
+    position: absolute;
+    background: #EFF4FF;
+    z-index: 5;
+  }
 }
 
 .header__elements a {
@@ -507,14 +542,18 @@ h3 {
 }
 
 .header__social a {
+  font-size: 20px;
   color: #697CA6;
   display: inline-flex;
   margin-right: 5px;
+  padding-top: 10px;
 }
 
 @media (min-width: 768px) {
   .header__social a {
+    font-size: 12px;
     margin-right: 20px;
+    padding-top: 0;
   }
 }
 

@@ -23,6 +23,18 @@
     background: blue;
     border-radius: 50%;
   }
+  &__drop {
+    order: -1;
+    &:hover .header__nav {
+      display: block;
+    }
+    @include sm {
+      order: 0;
+      &:hover .header__nav {
+        display: flex;
+      }
+    }
+  }
 
   &__burger {
     margin-right: 35px;
@@ -30,6 +42,7 @@
     z-index: 3;
     width: 30px;
     height: 20px;
+
 
     &:before,
     &:after {
@@ -79,10 +92,20 @@
   }
 
   &__nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
+    position: absolute;
+    display: none;
+    background: $shadow;
+    //margin: 15px -5px;
+    @include sm {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      position: relative;
+      //margin: 0;
+      background: inherit;
+    }
+
     //background: $shadow;
     //position: fixed;
     //overflow: auto;
@@ -155,8 +178,10 @@
 
   &__links {
     ul {
-      display: flex;
-      align-items: center;
+      @include sm {
+        display: flex;
+        align-items: center;
+      }
     }
   }
 
@@ -203,7 +228,7 @@
   &__name {
     cursor: pointer;
     p {
-      font-size: $fz30;
+      font-size: $fz20;
       padding: 30px 0 0 20px;
       @include sm {
         font-size: $fz12;
@@ -217,9 +242,12 @@
 
   &__elements {
     display: none;
-    position: absolute;
-    background: $shadow;
-    z-index: 5;
+    position: relative;
+    @include sm {
+      position: absolute;
+      background: $shadow;
+      z-index: 5;
+    }
     a {
       padding: 10px 10px;
       display: block;
@@ -235,11 +263,15 @@
     display: flex;
     justify-content: space-around;
     a {
+      font-size: $fz20;
       color: $gray;
       display: inline-flex;
       margin-right: 5px;
+      padding-top: 10px;
       @include sm {
+        font-size: $fz12;
         margin-right: 20px;
+        padding-top: 0;
       }
       @include bg {
         margin-right: 35px;
