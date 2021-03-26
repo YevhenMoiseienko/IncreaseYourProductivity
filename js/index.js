@@ -7,7 +7,7 @@ import {startVideo} from "./video.js";
 $(document).ready(function () {
     initSlider();
     dropDown();
-    headerDropDown();
+    // headerDropDown();
     burger();
     startVideo();
 })
