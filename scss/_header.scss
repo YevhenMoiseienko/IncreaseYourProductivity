@@ -15,6 +15,9 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 12px;
+    @include sm {
+      padding-top: 2px;
+    }
   }
 
   &__point {
@@ -95,7 +98,8 @@
     position: absolute;
     display: none;
     background: $shadow;
-    //margin: 15px -5px;
+    margin: 15px -5px;
+    padding: 20px;
     @include sm {
       display: flex;
       justify-content: space-between;
@@ -104,6 +108,7 @@
       position: relative;
       //margin: 0;
       background: inherit;
+      padding: 0;
     }
 
     //background: $shadow;
@@ -189,6 +194,7 @@
     display: inline-block;
     position: relative;
     padding-right: 20px;
+    margin-bottom: 20px;
     &:hover .header__elements {
       display: block;
     }
@@ -200,7 +206,7 @@
       border-radius: 30px;
       background-color: $lightGray;
       position: absolute;
-      top: 42px;
+      top: 9px;
       transition: all 0.3s;
       @include sm {
         top: 7px;
@@ -223,13 +229,16 @@
       transform: rotate(40deg);
       background-color: $darkBlue;
     }
+    @include sm {
+      margin-bottom: 0;
+    }
   }
 
   &__name {
     cursor: pointer;
     p {
       font-size: $fz20;
-      padding: 30px 0 0 20px;
+      padding: 0 0 0 20px;
       @include sm {
         font-size: $fz12;
         padding:  0 0 0 20px;
