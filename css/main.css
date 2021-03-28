@@ -364,6 +364,20 @@ h3 {
   display: block;
 }
 
+.header__drop:hover .header__burger:before {
+  transform: rotate(45deg);
+  top: 9px;
+}
+
+.header__drop:hover .header__burger:after {
+  transform: rotate(-45deg);
+  bottom: 9px;
+}
+
+.header__drop:hover span {
+  transform: scale(0);
+}
+
 @media (min-width: 768px) {
   .header__drop {
     order: 0;
@@ -397,20 +411,6 @@ h3 {
 
 .header__burger:after {
   bottom: 0;
-}
-
-.header__burger.active:before {
-  transform: rotate(45deg);
-  top: 9px;
-}
-
-.header__burger.active:after {
-  transform: rotate(-45deg);
-  bottom: 9px;
-}
-
-.header__burger.active span {
-  transform: scale(0);
 }
 
 .header__burger span {
