@@ -75,8 +75,13 @@
       margin-right: 40px;
     }
     a {
+      font-size: $fz20;
+      color: $gray;
       display: inline-flex;
       margin-right: 5px;
+      &:hover {
+        color: $blue;
+      }
       @include sm {
         margin-right: 10px;
       }
