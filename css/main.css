@@ -434,10 +434,14 @@ h3 {
   background: #EFF4FF;
   margin: 15px -5px;
   padding: 20px;
+  max-height: 340px;
+  overflow: scroll;
 }
 
 @media (min-width: 768px) {
   .header__nav {
+    max-height: none;
+    overflow: inherit;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -446,6 +450,10 @@ h3 {
     background: inherit;
     padding: 0;
   }
+}
+
+.header__links li {
+  display: block;
 }
 
 @media (min-width: 768px) {
@@ -458,11 +466,15 @@ h3 {
 .header__column {
   display: inline-block;
   position: relative;
-  padding-right: 20px;
+  padding-right: 10px;
   margin-bottom: 20px;
 }
 
 .header__column:hover .header__elements {
+  display: block;
+}
+
+.header__column:hover .header__elements li {
   display: block;
 }
 
@@ -511,15 +523,12 @@ h3 {
 
 .header__name {
   cursor: pointer;
-}
-
-.header__name p {
   font-size: 20px;
   padding: 0 0 0 20px;
 }
 
 @media (min-width: 768px) {
-  .header__name p {
+  .header__name {
     font-size: 12px;
     padding: 0 0 0 20px;
   }
@@ -540,6 +549,10 @@ h3 {
     background: #EFF4FF;
     z-index: 5;
   }
+}
+
+.header__elements li {
+  display: none;
 }
 
 .header__elements a {
@@ -568,7 +581,7 @@ h3 {
 @media (min-width: 768px) {
   .header__social a {
     font-size: 12px;
-    margin-right: 20px;
+    margin-right: 10px;
     padding-top: 0;
   }
 }

@@ -26,22 +26,28 @@
     background: blue;
     border-radius: 50%;
   }
+
   &__drop {
     order: -1;
+
     &:hover .header__nav {
       display: block;
     }
+
     &:hover .header__burger:before {
       transform: rotate(45deg);
       top: 9px;
     }
+
     &:hover .header__burger:after {
       transform: rotate(-45deg);
       bottom: 9px;
     }
+
     &:hover span {
       transform: scale(0);
     }
+
     @include sm {
       order: 0;
       &:hover .header__nav {
@@ -97,7 +103,11 @@
     background: $shadow;
     margin: 15px -5px;
     padding: 20px;
+    max-height: 340px;
+    overflow: scroll;
     @include sm {
+      max-height: none;
+      overflow: inherit;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -109,6 +119,9 @@
   }
 
   &__links {
+    li {
+      display: block;
+    }
     ul {
       @include sm {
         display: flex;
@@ -120,11 +133,16 @@
   &__column {
     display: inline-block;
     position: relative;
-    padding-right: 20px;
+    padding-right: 10px;
     margin-bottom: 20px;
+
     &:hover .header__elements {
       display: block;
     }
+    &:hover .header__elements li {
+      display: block;
+    }
+
     &:before,
     &:after {
       content: '';
@@ -139,10 +157,12 @@
         top: 7px;
       }
     }
+
     &:before {
       transform: rotate(40deg);
       left: 0;
     }
+
     &:hover:before {
       transform: rotate(-40deg);
       background-color: $darkBlue;
@@ -152,10 +172,12 @@
       transform: rotate(-40deg);
       left: 6px;
     }
+
     &:hover:after {
       transform: rotate(40deg);
       background-color: $darkBlue;
     }
+
     @include sm {
       margin-bottom: 0;
     }
@@ -163,14 +185,13 @@
 
   &__name {
     cursor: pointer;
-    p {
-      font-size: $fz20;
+    font-size: $fz20;
+    padding: 0 0 0 20px;
+    @include sm {
+      font-size: $fz12;
       padding: 0 0 0 20px;
-      @include sm {
-        font-size: $fz12;
-        padding:  0 0 0 20px;
-      }
     }
+
     &.active {
       color: $darkBlue;
     }
@@ -184,10 +205,15 @@
       background: $shadow;
       z-index: 5;
     }
-    a {
+
+    li {
+      display: none;
+    }
+    a{
       padding: 10px 10px;
       display: block;
       color: $gray;
+
       &:hover {
         background: $border;
       }
@@ -198,6 +224,7 @@
   &__social {
     display: flex;
     justify-content: space-around;
+
     a {
       font-size: $fz20;
       color: $gray;
@@ -206,13 +233,14 @@
       padding-top: 10px;
       @include sm {
         font-size: $fz12;
-        margin-right: 20px;
+        margin-right: 10px;
         padding-top: 0;
       }
       @include bg {
         margin-right: 35px;
       }
     }
+
     a:hover {
       color: $blue;
     }
