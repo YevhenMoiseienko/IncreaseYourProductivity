@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="scss/styles/jquery.fancybox.min.css">
     <link rel="stylesheet" href="scss/iconFonts.css">
     <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+    <title>Increase Your Productivity</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/libraries/jquery.fancybox.min.js"></script>
     <script src="js/libraries/slick.min.js"></script>
@@ -25,11 +25,11 @@
                     <div class="header__burger">
                         <span></span>
                     </div>
-                    <nav class="header__nav one">
-                        <div class="header__links">
+                    <div class="header__nav">
+                        <div id="nav" class="header__links">
                             <ul>
                                 <li class="header__column">
-                                    <a class="header__name" href="#">Productivity</a>
+                                    <a class="header__name active js-anchor-link" href="#Productivity">Productivity</a>
                                     <ul class="header__elements">
                                         <li><a href="#">About us</a></li>
                                         <li><a href="#">Programs</a></li>
@@ -38,7 +38,7 @@
                                     </ul>
                                 </li>
                                 <li class="header__column">
-                                    <a class="header__name" href="#">Plan</a>
+                                    <a class="header__name js-anchor-link" href="#Plan">Plan</a>
                                     <ul class="header__elements">
                                         <li><a href="#">About us</a></li>
                                         <li><a href="#">Programs</a></li>
@@ -47,7 +47,7 @@
                                     </ul>
                                 </li>
                                 <li class="header__column">
-                                    <a class="header__name" href="#">AboutUs</a>
+                                    <a class="header__name scroll-to js-anchor-link" href="#AboutUs">AboutUs</a>
                                     <ul class="header__elements">
                                         <li><a href="#">About us</a></li>
                                         <li><a href="#">Programs</a></li>
@@ -56,7 +56,7 @@
                                     </ul>
                                 </li>
                                 <li class="header__column">
-                                    <a class="header__name" href="#">OurResources</a>
+                                    <a class="header__name scroll-to js-anchor-link" href="#OurResources">OurResources</a>
                                     <ul class="header__elements">
                                         <li><a href="#">About us</a></li>
                                         <li><a href="#">Programs</a></li>
@@ -65,7 +65,7 @@
                                     </ul>
                                 </li>
                                 <li class="header__column">
-                                    <a class="header__name" href="#">Testimonials</a>
+                                    <a class="header__name scroll-to js-anchor-link" href="#Testimonials">Testimonials</a>
                                     <ul class="header__elements">
                                         <li><a href="#">About us</a></li>
                                         <li><a href="#">Programs</a></li>
@@ -74,7 +74,7 @@
                                     </ul>
                                 </li>
                                 <li class="header__column">
-                                    <a class="header__name" href="#">Customer</a>
+                                    <a class="header__name scroll-to js-anchor-link" href="#Customer">Customer</a>
                                     <ul class="header__elements">
                                         <li><a href="#">About us</a></li>
                                         <li><a href="#">Programs</a></li>
@@ -90,7 +90,7 @@
                             <a class="icon-tvitteFont" href="#"></a>
                             <a class="icon-mozila" href="#"></a>
                         </div>
-                    </nav>
+                    </div>
                 </div>
 
                 <div class="header__button">
@@ -100,8 +100,8 @@
         </div>
     </header>
     <!-- ./header  -->
-    <div class="content">
-        <div class="top">
+    <div id="main" class="content">
+        <section id="Productivity" class="top js-scroll-section">
             <div class="container">
                 <div class="top__sliders">
                     <div class="top__slider">
@@ -160,9 +160,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- ./top  -->
-        <div class="sponsors">
+        <section class="sponsors">
             <div class="container">
                 <div class="sponsors__row flex">
                     <div class="sponsors__block"><img src="img/sponsors/bitbucket.svg" alt="#"></div>
@@ -172,9 +172,9 @@
                     <div class="sponsors__block"><img src="img/sponsors/audi.svg" alt="#"></div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- ./sponsors  -->
-        <div class="plan">
+        <section id="Plan" class="plan js-scroll-section">
             <div class="container">
                 <div class="plan__row">
                     <div class="plan__material">
@@ -204,9 +204,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- /.plan -->
-        <div class="about-us">
+        <section id="AboutUs" class="about-us js-scroll-section">
             <div class="container">
                 <div class="about-us__main">
                     <div class="about-us__mark">
@@ -269,9 +269,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- /.about-us -->
-        <div class="statistic flex">
+        <section class="statistic flex">
             <div class="statistic__left">
                 <div class="statistic__lBox">
                     <div class="statistic__picture">
@@ -298,9 +298,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- /.statistic -->
-        <div class="resources">
+        <section id="OurResources" class="resources js-scroll-section">
             <div class="container">
                 <div class="resources__block">
                     <div class="resources__mark">
@@ -397,9 +397,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- /.resources -->
-        <div class="quotes">
+        <section id="Testimonials" class="quotes js-scroll-section">
             <div class="container">
                 <div class="quotes__column">
                     <div class="quotes__main">
@@ -534,9 +534,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- /.quotes -->
-        <div class="questions">
+        <section id="Customer" class="questions js-scroll-section">
             <div class="container">
                 <div class="questions__column">
                     <div class="questions__top">
@@ -636,9 +636,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- /.questions -->
-        <div class="started">
+        <section class="started">
             <div class="container">
                 <div class="started__column">
                     <div class="started__main">
@@ -659,9 +659,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- /.started -->
-        <div class="sign">
+        <section  class="sign">
             <div class="container">
                 <div class="sign__column">
                     <div class="sign__info">
@@ -682,7 +682,7 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- /.sign -->
     </div>
     <!-- ./content  -->

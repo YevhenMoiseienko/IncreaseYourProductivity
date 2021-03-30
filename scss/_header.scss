@@ -184,16 +184,13 @@
   }
 
   &__name {
+    color: $gray;
     cursor: pointer;
     font-size: $fz20;
     padding: 0 0 0 20px;
     @include sm {
       font-size: $fz12;
       padding: 0 0 0 20px;
-    }
-
-    &.active {
-      color: $darkBlue;
     }
   }
 
@@ -250,5 +247,9 @@
     position: relative;
     z-index: 3;
   }
+}
+.active {
+  color: red;
+  font-weight: 700;
 }
 

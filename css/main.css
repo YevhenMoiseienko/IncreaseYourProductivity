@@ -522,6 +522,7 @@ h3 {
 }
 
 .header__name {
+  color: #697CA6;
   cursor: pointer;
   font-size: 20px;
   padding: 0 0 0 20px;
@@ -532,10 +533,6 @@ h3 {
     font-size: 12px;
     padding: 0 0 0 20px;
   }
-}
-
-.header__name.active {
-  color: #3D4F9F;
 }
 
 .header__elements {
@@ -599,6 +596,11 @@ h3 {
 .header__button {
   position: relative;
   z-index: 3;
+}
+
+.active {
+  color: red;
+  font-weight: 700;
 }
 
 .footer {
