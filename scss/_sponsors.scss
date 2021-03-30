@@ -12,10 +12,21 @@
     @include bg {
       margin: 58px auto;
     }
-    img {
-      width: 60%;
+    a {
+      color: $gray;
+      padding: 0 10px;
+      font-size: $fz14;
+      &:hover {
+        color: $blue;
+      }
+      &:active {
+        color: $darkBlue;
+      }
+      @include sm {
+        font-size: $fz20;
+      }
       @include bg {
-        width: 100%;
+        font-size: $fz36;
       }
     }
   }

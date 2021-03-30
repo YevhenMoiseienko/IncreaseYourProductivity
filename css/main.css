@@ -257,8 +257,8 @@ h3 {
 
 @font-face {
   font-family: 'icons';
-  src: url("../fonts/icons.eot?ha6zhj");
-  src: url("../fonts/icons.eot?ha6zhj#iefix") format("embedded-opentype"), url("../fonts/icons.ttf?ha6zhj") format("truetype"), url("../fonts/icons.woff?ha6zhj") format("woff"), url("../fonts/icons.svg?ha6zhj#icons") format("svg");
+  src: url("../fonts/icons.eot?74k0fd");
+  src: url("../fonts/icons.eot?74k0fd#iefix") format("embedded-opentype"), url("../fonts/icons.ttf?74k0fd") format("truetype"), url("../fonts/icons.woff?74k0fd") format("woff"), url("../fonts/icons.svg?74k0fd#icons") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -278,20 +278,40 @@ h3 {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-facebook:before {
+.icon-apple:before {
   content: "\e900";
 }
 
-.icon-mozila:before {
+.icon-atlassian:before {
   content: "\e901";
 }
 
-.icon-telegrammFont:before {
+.icon-audi:before {
   content: "\e902";
 }
 
-.icon-tvitteFont:before {
+.icon-bitbucket:before {
   content: "\e903";
+}
+
+.icon-facebook:before {
+  content: "\e904";
+}
+
+.icon-facebook1:before {
+  content: "\e905";
+}
+
+.icon-mozila:before {
+  content: "\e906";
+}
+
+.icon-telegrammFont:before {
+  content: "\e907";
+}
+
+.icon-tvitteFont:before {
+  content: "\e908";
 }
 
 .wrapper {
@@ -898,13 +918,29 @@ h3 {
   }
 }
 
-.sponsors__block img {
-  width: 60%;
+.sponsors__block a {
+  color: #697CA6;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.sponsors__block a:hover {
+  color: #5E81FE;
+}
+
+.sponsors__block a:active {
+  color: #3D4F9F;
+}
+
+@media (min-width: 768px) {
+  .sponsors__block a {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 1024px) {
-  .sponsors__block img {
-    width: 100%;
+  .sponsors__block a {
+    font-size: 36px;
   }
 }
 
