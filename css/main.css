@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-family: "Quicksand";
   font-size: 36px;
-  color: #3D4F9F;
+  color: #ffffff;
 }
 
 @media (min-width: 1024px) {
@@ -786,7 +786,7 @@ h3 {
 }
 
 .top {
-  background: url(../img/top/clouds.jpg) 0 0/100% 100% no-repeat;
+  background: url(../img/top/perl.webp) 0 0/100% 100% no-repeat;
 }
 
 .top__sliders .slick-dots {
@@ -828,7 +828,7 @@ h3 {
   font-size: 10px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #3D4F9F;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -860,7 +860,7 @@ h3 {
   font-size: 12px;
   line-height: 1.93;
   letter-spacing: 0.03em;
-  color: #697CA6;
+  color: #ffffff;
 }
 
 @media (min-width: 768px) {

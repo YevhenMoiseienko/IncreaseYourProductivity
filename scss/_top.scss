@@ -1,7 +1,7 @@
 @import "variables";
 
 .top {
-  background: url(../img/top/clouds.jpg) 0 0/ 100% 100% no-repeat;
+  background: url(../img/top/perl.webp) 0 0/ 100% 100% no-repeat;
   &__sliders {
     & .slick-dots {
       display: flex;
@@ -35,7 +35,7 @@
     font-size: $fz10;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: $darkBlue;
+    color: $white;
     text-align: center;
     @include sm {
       padding: 40px 0 8px 0;
@@ -58,7 +58,7 @@
     font-size: $fz12;
     line-height: 1.93;
     letter-spacing: 0.03em;
-    color: $gray;
+    color: $white;
     @include sm {
       max-width: 360px;
       margin: 14px auto 10px;
